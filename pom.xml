@@ -61,6 +61,12 @@
       <artifactId>breeze_2.11</artifactId>
       <version>1.0</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.scalanlp/breeze-viz -->
+    <dependency>
+      <groupId>org.scalanlp</groupId>
+      <artifactId>breeze-viz_2.11</artifactId>
+      <version>1.0</version>
+    </dependency>
 
 
   </dependencies>
