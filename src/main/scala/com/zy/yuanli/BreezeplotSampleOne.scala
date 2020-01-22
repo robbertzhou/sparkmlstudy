@@ -9,6 +9,6 @@ import breeze.plot._
   */
 object BreezeplotSampleOne {
   def main(args: Array[String]): Unit = {
-      val f = new Figure()
+//      val f = new Figure
   }
 }
