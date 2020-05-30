@@ -8,6 +8,8 @@ object SparkCommon {
     val conf = new SparkConf()
     conf.setMaster("local[2]")
     conf.setAppName("app")
-    SparkSession.builder().config(conf).getOrCreate()
+    val session = SparkSession.builder().config(conf).getOrCreate()
+    SparkSession.setDefaultSession(session)
+    session
   }
 }
