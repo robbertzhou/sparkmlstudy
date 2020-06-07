@@ -8,19 +8,19 @@
   </property>
   <property>
     <name>dfs.namenode.servicerpc-address</name>
-    <value>master.zy.com:8022</value>
+    <value>m.zy.com:8022</value>
   </property>
   <property>
     <name>dfs.https.address</name>
-    <value>master.zy.com:50470</value>
+    <value>m.zy.com:9871</value>
   </property>
   <property>
     <name>dfs.https.port</name>
-    <value>50470</value>
+    <value>9871</value>
   </property>
   <property>
     <name>dfs.namenode.http-address</name>
-    <value>master.zy.com:50070</value>
+    <value>m.zy.com:9870</value>
   </property>
   <property>
     <name>dfs.replication</name>
@@ -39,11 +39,11 @@
     <value>022</value>
   </property>
   <property>
-    <name>dfs.namenode.acls.enabled</name>
-    <value>false</value>
+    <name>dfs.client.block.write.locateFollowingBlock.retries</name>
+    <value>7</value>
   </property>
   <property>
-    <name>dfs.client.use.legacy.blockreader</name>
+    <name>dfs.namenode.acls.enabled</name>
     <value>false</value>
   </property>
   <property>
@@ -52,7 +52,7 @@
   </property>
   <property>
     <name>dfs.domain.socket.path</name>
-    <value>/var/run/hdfs-sockets/dn</value>
+    <value>/home/run/hdfs-sockets/dn</value>
   </property>
   <property>
     <name>dfs.client.read.shortcircuit.skip.checksum</name>

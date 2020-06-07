@@ -4,7 +4,7 @@
 <configuration>
   <property>
     <name>hive.metastore.uris</name>
-    <value>thrift://master.zy.com:9083</value>
+    <value>thrift://m.zy.com:9083,thrift://sl2.zy.com:9083</value>
   </property>
   <property>
     <name>hive.metastore.client.socket.timeout</name>
@@ -76,7 +76,27 @@
   </property>
   <property>
     <name>hive.vectorized.execution.reduce.enabled</name>
+    <value>true</value>
+  </property>
+  <property>
+    <name>hive.vectorized.use.vectorized.input.format</name>
+    <value>true</value>
+  </property>
+  <property>
+    <name>hive.vectorized.use.checked.expressions</name>
+    <value>true</value>
+  </property>
+  <property>
+    <name>hive.vectorized.use.vector.serde.deserialize</name>
     <value>false</value>
+  </property>
+  <property>
+    <name>hive.vectorized.adaptor.usage.mode</name>
+    <value>chosen</value>
+  </property>
+  <property>
+    <name>hive.vectorized.input.format.excludes</name>
+    <value>org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat</value>
   </property>
   <property>
     <name>hive.merge.mapfiles</name>
@@ -136,15 +156,15 @@
   </property>
   <property>
     <name>hive.execution.engine</name>
-    <value>spark</value>
+    <value>mr</value>
   </property>
   <property>
     <name>spark.executor.memory</name>
-    <value>912680550</value>
+    <value>912680550b</value>
   </property>
   <property>
     <name>spark.driver.memory</name>
-    <value>966367641</value>
+    <value>966367641b</value>
   </property>
   <property>
     <name>spark.executor.cores</name>
@@ -152,11 +172,11 @@
   </property>
   <property>
     <name>spark.yarn.driver.memoryOverhead</name>
-    <value>102</value>
+    <value>102m</value>
   </property>
   <property>
     <name>spark.yarn.executor.memoryOverhead</name>
-    <value>153</value>
+    <value>153m</value>
   </property>
   <property>
     <name>spark.dynamicAllocation.enabled</name>
@@ -184,7 +204,7 @@
   </property>
   <property>
     <name>hive.zookeeper.quorum</name>
-    <value>slave1.zy.com,master.zy.com,slave2.zy.com</value>
+    <value>sl2.zy.com,m.zy.com,sl1.zy.com</value>
   </property>
   <property>
     <name>hive.zookeeper.client.port</name>
@@ -196,7 +216,7 @@
   </property>
   <property>
     <name>hbase.zookeeper.quorum</name>
-    <value>slave1.zy.com,master.zy.com,slave2.zy.com</value>
+    <value>sl2.zy.com,m.zy.com,sl1.zy.com</value>
   </property>
   <property>
     <name>hbase.zookeeper.property.clientPort</name>
@@ -216,6 +236,26 @@
   </property>
   <property>
     <name>spark.shuffle.service.enabled</name>
+    <value>true</value>
+  </property>
+  <property>
+    <name>hive.strict.checks.orderby.no.limit</name>
+    <value>false</value>
+  </property>
+  <property>
+    <name>hive.strict.checks.no.partition.filter</name>
+    <value>false</value>
+  </property>
+  <property>
+    <name>hive.strict.checks.type.safety</name>
+    <value>true</value>
+  </property>
+  <property>
+    <name>hive.strict.checks.cartesian.product</name>
+    <value>false</value>
+  </property>
+  <property>
+    <name>hive.strict.checks.bucketing</name>
     <value>true</value>
   </property>
 </configuration>
