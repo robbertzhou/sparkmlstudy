@@ -20,8 +20,8 @@ object DFCount {
     df.createOrReplaceTempView("dfTable")
 //    println("number is:" + df.count())
     //创建一个日期的列
-    val dfWithDate = df.withColumn("date",to_date(col("InvoiceDate"),"MM/d/yyyy H:mm"))
-    dfWithDate.show()
+//    val dfWithDate = df.withColumn("date",to_date(col("InvoiceDate"),"MM/d/yyyy H:mm"))
+//    dfWithDate.show()
 
   }
 }

@@ -11,8 +11,7 @@ import org.apache.spark.sql.SparkSession
  */
 object Word2VecTest {
   def main(args: Array[String]): Unit = {
-    SparkCommon.getSession()
-    val spark = SparkSession.getDefaultSession.get
+    val spark = SparkCommon.getSession()
     val documentDF = spark.createDataFrame(Seq(
       "Hi I heard about spark".split(" "),
       "I wish Java could use case classes".split(" ")

@@ -102,7 +102,7 @@ object MyEsUtils {
     client.close()
   }
   def update(): Unit ={
-    Update.Builder
+//    Update.Builder
   }
 }
 
