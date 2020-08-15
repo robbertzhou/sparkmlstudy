@@ -24,7 +24,7 @@
 
     <!-- Dependency Lib-->
     <scala.version>2.11.12</scala.version>
-    <spark.version>2.4.5</spark.version>
+    <spark.version>2.1.0</spark.version>
     <kryo.version>2.21</kryo.version>
     <junit.version>4.12</junit.version>
     <phoenix.version>4.14.3-HBase-1.4</phoenix.version>
@@ -115,6 +115,7 @@
       <version>${spark.version}</version>
       <scope>${etl.scope}</scope>
     </dependency>
+
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-streaming_2.11</artifactId>
@@ -244,11 +245,6 @@
       <version>4.1.0</version>
     </dependency>
     <dependency>
-      <groupId>org.elasticsearch</groupId>
-      <artifactId>elasticsearch-spark-20_2.11</artifactId>
-      <version>7.3.0</version>
-    </dependency>
-    <dependency>
       <groupId>com.esotericsoftware.kryo</groupId>
       <artifactId>kryo</artifactId>
       <version>${kryo.version}</version>
@@ -322,12 +318,17 @@
       <artifactId>jna</artifactId>
       <version>4.5.2</version>
     </dependency>
+    <dependency>
+      <groupId>org.elasticsearch</groupId>
+      <artifactId>elasticsearch-spark-20_2.11</artifactId>
+      <version>7.3.0</version>
+    </dependency>
 
-<!--    <dependency>-->
-<!--      <groupId>org.codehaus.janino</groupId>-->
-<!--      <artifactId>commons-compiler</artifactId>-->
-<!--      <version>2.7.8</version>-->
-<!--    </dependency>-->
+    <dependency>
+      <groupId>com.github.housepower</groupId>
+      <artifactId>clickhouse-native-jdbc</artifactId>
+      <version>2.1-stable</version>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
