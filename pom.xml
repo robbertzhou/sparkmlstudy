@@ -138,6 +138,13 @@
       <artifactId>spark-hive_2.11</artifactId>
       <version>${spark.version}</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-graphx -->
+    <dependency>
+      <groupId>org.apache.spark</groupId>
+      <artifactId>spark-graphx_2.11</artifactId>
+      <version>${spark.version}</version>
+    </dependency>
+
     <dependency>
       <groupId>org.apache.phoenix</groupId>
       <artifactId>phoenix-client</artifactId>
@@ -329,6 +336,8 @@
       <artifactId>clickhouse-native-jdbc</artifactId>
       <version>2.1-stable</version>
     </dependency>
+
+
   </dependencies>
   <build>
     <plugins>
