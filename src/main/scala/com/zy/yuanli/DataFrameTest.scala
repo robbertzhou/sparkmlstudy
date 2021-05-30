@@ -7,7 +7,7 @@ import org.apache.spark.sql.types.{DataTypes, StructField, StructType}
 object DataFrameTest {
   def main(args: Array[String]): Unit = {
     val session = SparkCommon.getSession()
-    val path = "file:///G:\\训练数据\\customers.txt"
+    val path = "hdfs://master.zy.com/data/customers.txt"
     val custDF = session.read.option("header",true).format("csv").load(path)
     val maped = custDF.select(custDF("name").cast("String"),custDF("age").cast("Double"),custDF("gender").cast("String"))
     maped.printSchema()
