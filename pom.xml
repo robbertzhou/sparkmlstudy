@@ -24,7 +24,7 @@
 
     <!-- Dependency Lib-->
     <scala.version>2.11.12</scala.version>
-    <spark.version>2.1.0</spark.version>
+    <spark.version>2.4.7</spark.version>
     <kryo.version>2.21</kryo.version>
     <junit.version>4.12</junit.version>
     <phoenix.version>4.14.3-HBase-1.4</phoenix.version>
