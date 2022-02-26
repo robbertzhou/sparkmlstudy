@@ -24,7 +24,7 @@
 
     <!-- Dependency Lib-->
     <scala.version>2.11.12</scala.version>
-    <spark.version>2.1.0</spark.version>
+    <spark.version>2.4.0</spark.version>
     <kryo.version>2.21</kryo.version>
     <junit.version>4.12</junit.version>
     <phoenix.version>4.14.3-HBase-1.4</phoenix.version>
@@ -133,11 +133,11 @@
       <artifactId>gson</artifactId>
       <version>2.8.0</version>
     </dependency>
-<!--    <dependency>-->
-<!--      <groupId>org.apache.spark</groupId>-->
-<!--      <artifactId>spark-hive_2.11</artifactId>-->
-<!--      <version>${spark.version}</version>-->
-<!--    </dependency>-->
+    <dependency>
+      <groupId>org.apache.spark</groupId>
+      <artifactId>spark-hive_2.11</artifactId>
+      <version>${spark.version}</version>
+    </dependency>
     <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-graphx -->
     <dependency>
       <groupId>org.apache.spark</groupId>
