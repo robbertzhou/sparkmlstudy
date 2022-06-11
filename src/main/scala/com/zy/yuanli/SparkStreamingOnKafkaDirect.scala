@@ -123,13 +123,14 @@ object SparkStreamingOnKafkaDirect {
       //      println(" Scheme: "+frame.printSchema())
 
       frame.createOrReplaceTempView("t1")
-      spark.sql("set hive.exec.dynamici.partition=true")
-      spark.sql("set hive.exec.dynamic.partition.mode=nonstrict")
+
       //      spark.sql("select * from t1").show()
       val result = spark.sql("select * from t1")
       spark.sql("insert into test.jack select *,'2022-12-06' from t1")
 //      result.write.mode(SaveMode.Append).insertInto("test.jack")
     }
+//      spark.sql("set hive.exec.dynamici.partition=true")
+//    spark.sql("set hive.exec.dynamic.partition.mode=nonstrict")
     )
 
 
